@@ -1,0 +1,182 @@
+.registerSec {
+    background: linear-gradient(
+      185deg,
+      rgb(142 218 243) 0%,
+      rgb(249 160 252) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1500px 9990px 4919px 19911px;
+  }
+  
+  .registerForm {
+    max-width: 560px;
+    font-family: "Courier New", Courier, monospace;
+    width: 83vw;
+    padding: 1.5rem;
+    background-color: rgb(201 177 255);
+    border-radius: 18px;
+    margin: 6rem 0;
+  }
+  
+  .registerTitle {
+    color: rgb(118 0 122);
+    background: rgb(255 255 255 / 9%);
+    font-size: 57px;
+    font-family: cursive, ui-monospace;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgb(91 91 91 / 19%);
+    border-radius: 12px;
+    padding-bottom: 10px;
+  }
+  
+  .regInput {
+    outline: none;
+    border: none;
+    background-color: #f3f4f5d3;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    line-height: 3rem;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+  .regInputNumDisable[type="number"]::-webkit-inner-spin-button,
+  .regInputNumDisable[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+  }
+  .registerInputCont {
+    padding-bottom: 1rem;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    background-color: rgb(255 255 255 / 25%);
+    width: -webkit-fill-available;
+    width: -moz-available;
+    line-height: 3rem;
+    padding: 5px 15px 19px 15px;
+  }
+  .registerInput {
+    outline: none;
+    border: none;
+    background-color: #efefef6b;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    line-height: 3rem;
+    border-radius: 6px;
+    padding: 0 45px 0 15px;
+    color: var(--lightText);
+  }
+  .registerInputCont label {
+    cursor: pointer;
+    color: rgb(69 40 40);
+  }
+  .bdrTop {
+    border-radius: 8px 8px 0 0;
+  }
+  .bdrBottom {
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .RLbtn {
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    height: 42px;
+    width: 122px;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #ce8eff;
+    border: none;
+    color: #f6f0f0;
+    border-radius: 8px;
+    margin: 30px 9px 15px;
+    font-family: cursive, ui-monospace;
+    box-shadow: 0px 3px 9px 3px #1f1f1f21;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .RLbtn:disabled {
+    cursor: not-allowed;
+  }
+  .registerBtn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .registerBtn:before {
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+  }
+  
+  .registerBtn:hover {
+    background: #d397fc;
+  }
+  
+  .registerBtn:active {
+    background: #bc98f2;
+    top: 2px;
+  }
+  
+  .registerResetBtn {
+    background: #7a7a7a29;
+    color: #a3a1a1;
+    height: 42px;
+    width: 122px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 15px 9px;
+    font-family: cursive, ui-monospace;
+    box-shadow: 0px 3px 11px 3px #dee4a6;
+    cursor: pointer;
+  }
+  .inputContM {
+    position: relative;
+    transition: all 600ms ease-in-out;
+  }
+  .valid {
+    position: absolute;
+    top: 23%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(62, 234, 0);
+    transition: all 600ms ease-in-out;
+  }
+  .invalid {
+    position: absolute;
+    top: 26%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 600ms ease-in-out;
+    color: red;
+  }
+  .offscreen {
+    transition: all 600ms ease-in-out;
+    display: none;
+  }
+  .hide {
+    transition: all 600ms ease-in-out;
+    display: none;
+  }
+  .regGuide {
+    display: flex;
+    align-items: center;
+    background: #ededed;
+    border-radius: 25px;
+    padding: 10px 1.5rem 10px 13px;
+    transition: all 600ms ease-in-out;
+    line-height: 2;
+  }
+  

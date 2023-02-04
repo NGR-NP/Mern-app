@@ -1,42 +1,54 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --lightPink: #ffbfe9;
+  --lightBlue: #a6e4ff;
+  --midBlue: #72d4ff;
+  --lightYellow: #fff4a4;
+  --lightGreen: #ace1d5;
+  --pink: #faafff;
+  --lightText: #838080;
+  --lightTitle: #6d6d6d;
+  --lightBlueBackground: #e4f8ff;
+  --lightPinkBackground: #ffeffa;
+  --bgLineGradBlue: linear-gradient(
+    174deg,
+    rgba(227, 248, 255, 1) 0%,
+    rgba(254, 235, 255, 1) 100%
+  );
+  --bgRadiGradPink: radial-gradient(
+    circle,
+    rgba(227, 248, 255, 1) 0%,
+    rgb(251, 213, 253) 100%
+  );
+  --boxShadow1: 0px 0px 20px 5px rgb(0 0 0 / 13%);
+  --boxShadow: 0px 6px 20px 5px rgb(0 0 0 / 9%);
+  --font1: "Alegreya", serif;
+  --font2: "BioRhyme", serif;
+  --font3: "Eczar", serif;
+  --font4: "Goblin One", cursive;
+  --font5: "Inknut Antiqua", serif;
+  --font6: "Rakkas", cursive;
+  --font7: "Arvo", serif;
+  --fontDesc: "Lora", serif;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.centerADiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+body {
+  background-color: #a8e5ff82;
+  background: radial-gradient(
+    circle,
+    rgb(252 216 255) 48%,
+    rgb(218 243 251) 101%
+  );
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* *{
+  border:0.05px solid rgb(0, 255, 0) ;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

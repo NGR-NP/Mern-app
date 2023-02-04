@@ -13,7 +13,7 @@ import {
 import { apiSlice } from "./api/apiSlice";
 import authReducer from "../auth/authSlice";
 import cartReducer from "../cart/cartSlice";
-import toastReducer from "../custonToast/toastSlice";
+import toastReducer from "../customToast/toastSlice";
 const persistConfig = {
   key: "root",
   version: 1,

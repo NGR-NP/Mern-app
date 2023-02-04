@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Navigate, useLocation } from "react-router-dom";
-import { selectCurrentRole, selectCurrentToken } from "./authSlice";
+import { selectCurrentRole, selectCurrentToken } from "../redux/auth/authSlice";
 import NavLayout from "./NavLayout";
 
 const RequireAuth = ({ isAllowed }) => {

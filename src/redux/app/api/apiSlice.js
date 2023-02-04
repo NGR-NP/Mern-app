@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { logOut, setCredentials } from "../../auth/authSlice";
-import { showToastMessage } from "../../custonToast/toastSlice";
+import { showToastMessage } from "../../customToast/toastSlice";
 
 const baseQuery = fetchBaseQuery({
   baseUrl: "https://mern-stack-course-production.up.railway.app/api",
